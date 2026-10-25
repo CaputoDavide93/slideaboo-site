@@ -1,0 +1,27 @@
+# Slideaboo site
+
+> The public website for Slideaboo, a calm sliding-picture puzzle app for toddlers and the grown-up beside them, on iPhone, iPad and Android. It holds the app's privacy policy, its contact and support page and a philosophy page, each in English and Italian. Static HTML and CSS served by GitHub Pages, with no scripts, forms, cookies or analytics. MIT licensed.
+
+Key facts:
+
+- Live site: https://caputodavide93.github.io/slideaboo-site/
+- Privacy policy: https://caputodavide93.github.io/slideaboo-site/privacy/ (Italian: https://caputodavide93.github.io/slideaboo-site/it/privacy/)
+- What the privacy policy says about the app: no account, no internet connection, no analytics, ads or tracking, no AI, no permissions. The app keeps the grown-ups' settings and an optional child's first name on the device only. Nothing to buy: no purchases, subscriptions or ads.
+- Read the policy itself for the exact wording and its effective date; this summary is not a substitute. Statements about the shipped app come from the policy and are not independently verified here.
+- Contact and support page: https://caputodavide93.github.io/slideaboo-site/contact/ (the support address is on that page).
+- Philosophy page: https://caputodavide93.github.io/slideaboo-site/philosophy/, the app's own "Why" screen.
+- Languages: English and Italian, linked to each other with hreflang.
+- Built from plain files: one index.html per page, one shared stylesheet with light and dark colours. No build step.
+- Tested: layout and screenshots in Chromium on macOS, light and dark. Safari, Firefox and screen readers are unverified.
+- Preview and check locally: `make serve`, then `make check` (needs Python 3).
+- Trade-off: only English and Italian exist, and GitHub Pages may keep standard server logs.
+- Independent project by Davide Caputo.
+
+## Docs
+
+- [README](https://github.com/CaputoDavide93/slideaboo-site/blob/main/README.md): what the site is, why it exists, install, tested on, repo structure
+- [Setup](https://github.com/CaputoDavide93/slideaboo-site/blob/main/docs/setup.md): preview, edit a page, publish
+- [How it works](https://github.com/CaputoDavide93/slideaboo-site/blob/main/docs/how-it-works.md): pages, languages, URLs, styles, checks
+- [FAQ](https://github.com/CaputoDavide93/slideaboo-site/blob/main/docs/faq.md): cookies, languages, reuse, reporting a problem
+- [Troubleshooting](https://github.com/CaputoDavide93/slideaboo-site/blob/main/docs/troubleshooting.md): symptoms and fixes
+- [Contributing](https://github.com/CaputoDavide93/slideaboo-site/blob/main/CONTRIBUTING.md)
