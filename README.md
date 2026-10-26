@@ -4,7 +4,7 @@
 
 # 🧩 Slideaboo site
 
-**Read what the Slideaboo toddler puzzle app keeps, and where, before you install it: privacy policy, support and philosophy pages in English and Italian**
+**Privacy policy, support and philosophy pages for the Slideaboo toddler puzzle app, in English and Italian**
 
 ![HTML](https://img.shields.io/badge/HTML-static-E34F26?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-light_and_dark-1572B6?logo=css3&logoColor=white)
@@ -18,46 +18,11 @@
 
 ## ✨ Features
 
-This repository is the public website for **Slideaboo**, a calm sliding-picture
-puzzle for small children and the grown-up beside them, on iPhone, iPad and
-Android. App stores need a privacy policy and a support page, and the app links
-to both. This site is where they live. Open it at
-[caputodavide93.github.io/slideaboo-site](https://caputodavide93.github.io/slideaboo-site/).
+This is the website for **Slideaboo**, a calm sliding-picture puzzle for small children and the grown-up beside them, on iPhone, iPad and Android. The app's Settings and its store listings link here for the privacy policy and the support page, so those addresses stay fixed.
 
-### Why it exists
+The privacy page says what stays on the device (the grown-ups' settings only), that the app asks for no permissions, how the optional child's name is stored and erased, and how to delete everything. Each page exists in English and Italian.
 
-An app for a two-year-old asks a parent for trust. Before you install it you
-want to know what it keeps about your child, which permissions it asks for and
-whether anything leaves the device. The answer has to sit on a page you can read
-on your phone, without a cookie banner, in your own language, and the stores
-want the same page as a link.
-
-So the policy is a plain static page, in English and Italian. It says what stays
-on the device, that the app asks for no permissions, how the optional child's
-name is stored and erased, and how to delete everything.
-
-| | This site | A policy page on a generic site builder | A policy PDF |
-|---|---|---|---|
-| Scripts, cookies, analytics | None (a check fails the build if a script or form appears) | Often present | None |
-| Readable on a phone | Yes, one column | Depends on the theme | Pinch and zoom |
-| Light and dark | Follows the reader's system setting | Depends on the theme | No |
-| English and Italian, linked to each other | Yes, with `hreflang` tags | Usually a plugin | One file per language |
-| Stable URLs the stores can keep | `/privacy/` and `/contact/`, plus `/it/...` | Tied to the builder | Tied to a file name |
-| Review the change before it goes live | Pull request, then GitHub Pages publishes `main` | Edit in a web editor | Replace the file |
-
-The trade-off: only English and Italian exist, and GitHub Pages may keep
-standard server logs for visitors. Both are stated on the site.
-
-### Install in 3 steps
-
-There is nothing to install to read the site. To preview or edit it you need
-Python 3 and a browser.
-
-1. **Clone:** `git clone https://github.com/CaputoDavide93/slideaboo-site.git && cd slideaboo-site`
-2. **Serve:** `make serve` (the same as `python3 -m http.server 8000`).
-3. **Open** <http://localhost:8000/>. Run `make check` before you push.
-
-### What you get
+Live at [caputodavide93.github.io/slideaboo-site](https://caputodavide93.github.io/slideaboo-site/).
 
 | | Page | What it is |
 |---|---|---|
@@ -70,6 +35,8 @@ Python 3 and a browser.
 | 🚫 | No tracking | No scripts, forms, cookies or analytics, and a check that fails if one appears |
 | 🔎 | Findable | Canonical URLs, `hreflang` alternates, a sitemap, `robots.txt` and `llms.txt` |
 | 🧪 | Self-checking | `make check` verifies every page exists, every local link resolves, metadata is present and the support address is the only one |
+
+The pages are plain HTML and CSS: no scripts, forms, cookies or analytics, and a check fails the build if one appears. Only English and Italian exist. GitHub Pages may keep standard server logs for visitors, and the privacy page says so.
 
 ---
 
@@ -124,17 +91,16 @@ How it is built is in [docs/how-it-works.md](docs/how-it-works.md).
 
 ## 🚀 Quick Start
 
+You need Python 3 and a browser. There is no build step, and `make check` uses only the standard library.
+
 ```bash
+git clone https://github.com/CaputoDavide93/slideaboo-site.git
+cd slideaboo-site
 make serve     # preview at http://localhost:8000
-make check     # page, link, metadata and diagram checks, the same as CI
+make check     # the same checks CI runs
 ```
 
-GitHub Pages publishes the `main` branch root, so a merged pull request is the
-release. The privacy pages must stay true to the app's own `docs/privacy.md`:
-change both together, in both languages, with a new effective date. Settings
-labels are quoted from the app's ARB files (`lib/l10n/app_*.arb`), and the
-philosophy pages are its `whyTitle` to `whyClosing` copy, in the order the
-screen shows it. More in [docs/setup.md](docs/setup.md).
+Editing a page, retaking the images and what each check covers are in [docs/setup.md](docs/setup.md).
 
 ---
 
@@ -171,6 +137,17 @@ slideaboo-site/
 ├── .nojekyll              # serve files as they are
 └── .gitignore
 ```
+
+---
+
+## 📦 Deployment
+
+GitHub Pages serves the root of `main`, so a merged pull request is the release.
+CI runs `make check` on every pull request and on every push to `main`. The
+privacy pages must stay true to the app's own `docs/privacy.md`: change both
+together, in both languages, with a new effective date. Settings labels are
+quoted from the app's ARB files (`lib/l10n/app_*.arb`), and the philosophy pages
+are its `whyTitle` to `whyClosing` copy, in the order the screen shows it.
 
 ---
 
