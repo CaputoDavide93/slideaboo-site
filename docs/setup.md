@@ -56,9 +56,9 @@ the live page afterwards at `https://caputodavide93.github.io/slideaboo-site/`.
 
 ```bash
 make screenshots   # docs/assets/screenshots/
-make social        # docs/assets/social-preview.png
+make social        # docs/assets/social-preview.png, drawn by tools/brand/brand_kit.py from the site icon
 make diagram       # docs/assets/architecture-{light,dark}.svg
 ```
 
-The first two need network access once to install Playwright and download
+`make screenshots` needs network access once to install Playwright and download
 Chromium. The contact page is never photographed: it shows the support address.
