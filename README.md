@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/icon.png" width="96" alt="The Slideaboo app icon: a white duck peeking out of a sliding yellow tile">
+<img src="docs/assets/brand/icon.png" width="96" alt="The Slideaboo app icon: a white duck peeking out of a sliding yellow tile">
 
 # 🧩 Slideaboo site
 
@@ -160,7 +160,7 @@ slideaboo-site/
 ├── it/                    # 🇮🇹 the same four pages in Italian
 ├── assets/                # 🎨 site.css and the app icon in three sizes
 ├── docs/                  # 📚 setup, how it works, FAQ, troubleshooting
-│   └── assets/            # 🖼️ diagram, screenshots, social preview
+│   └── assets/            # 🖼️ diagram, screenshots, social preview, README icon
 ├── tools/                 # 🔧 check_site.py, gen_diagram.py, brand/, screenshots/
 ├── .github/workflows/     # 🤖 ci.yml runs make check
 ├── Makefile               # ⚙️ check, serve, diagram, screenshots, social
