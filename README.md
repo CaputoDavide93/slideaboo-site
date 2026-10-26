@@ -166,7 +166,7 @@ slideaboo-site/
 ├── Makefile               # ⚙️ check, serve, diagram, screenshots, social
 ├── llms.txt               # 🤖 the site in one plain-text page for search tools
 ├── robots.txt  sitemap.xml  # 🔎 crawler files
-├── AGENTS.md  CLAUDE.md   # 🧭 contributor notes
+├── AGENTS.md              # 🧭 contributor and agent notes
 ├── CONTRIBUTING.md  SECURITY.md  LICENSE
 ├── .nojekyll              # serve files as they are
 └── .gitignore
